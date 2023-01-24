@@ -19,6 +19,7 @@ else{
     <link rel="stylesheet" href="css/preloginstyle.css">
     <link rel="stylesheet" href="css/loginstyle.css">
     <link rel="stylesheet" href="css/navbarstyle.css">
+    <link rel="stylesheet" href="css/index.css">
     
   </head>
   <body>
@@ -51,10 +52,46 @@ else{
                 </li>
             </ul>
         </nav>
-    </header>
+    </header>  
+    <h1 style="position:absolute; margin-top:140px; margin-left:810px;">Welcome <?php echo $row["Name"]; ?></h1> 
     <div class="container">
-      <h1>Welcome <?php echo $row["Name"]; ?></h1> 
+      <div class="card-container">
+        <a style="color: grey;" href="studttfetch.php">
+            <div class="card-base card-one">
+            <div class="img-one"></div>
+            <div class="side-btn btn-base btn-one">
+                <P>Schedule</P>
+            </div>
+            <div class="content">
+                See your update class Time table, along with any other important notifications posted by your lecturers.
+            </div>
+            </div>
+        </a>
+        <a  style="color: grey;" href="grievance.php">
+            <div class="card-base card-two">
+                <div class="img-two"></div>
+                <div class="side-btn btn-base btn-one">
+                    <P>Grievance</P>
+                </div>
+                <div class="content">
+                    Report any grievance or Feedback by submitting the subject and a short body description of the problem you face. We will look into it ASAP 
+                </div>
+            </div>
+        </a>
+        <a  style="color: grey;" href="vote.php">
+            <div class="card-base card-three">
+                <div class="img-three"></div>
+                <div class="side-btn btn-base btn-one">
+                    <P>Voting</P>
+                </div>
+                <div class="content">
+                    Vote for Public Grievances/Feedback posted by others so that ones with higher votes will be given higher priority. 
+                </div>
+            </div>
+        </a>
     </div>
+    </div>
+    
     
     <script src="js/navbar.js"></script>
   </body>
